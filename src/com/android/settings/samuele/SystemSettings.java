@@ -41,7 +41,7 @@ import com.android.settings.Utils;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
+import java.util.List; 
 
 public class SystemSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -59,7 +59,7 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mVolBtnMusicCtrl; 
     private CheckBoxPreference mKillAppLongpressBack;
     private PreferenceScreen mNotificationPulse;
-    private PreferenceScreen mBatteryPulse; 
+    private PreferenceScreen mBatteryPulse;
 
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
     private final ArrayList<CheckBoxPreference> mResetCbPrefs
@@ -135,7 +135,7 @@ public class SystemSettings extends SettingsPreferenceFragment implements
                     Settings.System.MODE_VOLUME_OVERLAY, value);
             mVolumeOverlay.setSummary(mVolumeOverlay.getEntries()[index]);
 	    return true;
-        } 
+	}
         // TODO Auto-generated method stub
         return false;
     }
