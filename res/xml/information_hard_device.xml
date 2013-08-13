@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+      
+    <Preference
+	android:key="display" 
+	android:title="Display" 
+	android:summary="Super Amoled HD 4.65' ( 1280*720 )"/>
+
+    <Preference
+	android:key="SoC" 
+	android:title="SoC" 
+	android:summary="Texas Instruments OMAP 4460"/>
+
+    <Preference
+	android:key="cpu"
+	android:title="CPU"
+	android:summary="1.2 GHz dual-core ARM Cortex-A9"/>
+
+    <Preference
+	android:key="gpu"
+	android:title="GPU"
+	android:summary="PowerVR SGX540"/>
+
+    <Preference
+	android:key="ram"
+	android:title="RAM"
+	android:summary="1024 Mb"/>
+
+    <Preference
+	android:key="camera"
+	android:title="@string/camera_info"
+	android:summary="5 Mpx ( 2592 x 1944 )"/>
+
+    <Preference
+	android:key="fcamera"
+	android:title="@string/fcamera_info"
+	android:summary="1.3 Mpx"/>
+
+    <Preference
+	android:key="video"
+	android:title="Videocamera"
+	android:summary="1080p, 30fps ( 1920*1080 )"/>
+  
+</PreferenceScreen>
