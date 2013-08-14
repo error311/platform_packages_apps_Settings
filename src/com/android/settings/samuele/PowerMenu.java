@@ -74,7 +74,7 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
 
 	mRotationPref = (CheckBoxPreference) findPreference(KEY_ROTATION);
         mRotationPref.setChecked((Settings.System.getInt(getContentResolver(),
-                Settings.System.POWER_MENU_ROTATION_LOCK_ENABLED, 1) == 1));
+                Settings.System.POWER_MENU_ROTATION_LOCK_ENABLED, 0) == 1));
 
         mSilentPref = (CheckBoxPreference) findPreference(KEY_SILENT);
         mSilentPref.setChecked((Settings.System.getInt(getContentResolver(),

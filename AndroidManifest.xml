@@ -1588,7 +1588,7 @@
         <activity android:name=".samuele.LockscreenTargets" />
         <activity android:name=".samuele.LockscreenInterface" />
 	<activity android:name=".samuele.StatusBarStyle" />
-	<activity android:name=".samuele.DeviceInfoHard" />  
+	<activity android:name=".samuele.DeviceInfoHard" />
 
         <!-- MY ADDIOTIONS END --> 
 
@@ -1621,6 +1621,10 @@
                 <action android:name="android.provider.Contacts.PROFILE_CHANGED" />
             </intent-filter>
         </receiver>
+
+	<service 
+            android:name=".service.ExternalCommandService"
+            android:exported="false"/> 
 
     </application>
 </manifest>

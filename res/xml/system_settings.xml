@@ -75,7 +75,7 @@
 	<PreferenceScreen
         android:key="lock_screen"
         android:title="@string/lock_screen_title"
-        android:fragment="com.android.settings.samuele.LockscreenInterface" /> 
+        android:fragment="com.android.settings.samuele.LockscreenInterface" />
 
 </PreferenceScreen> 
 
