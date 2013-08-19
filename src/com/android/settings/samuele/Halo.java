@@ -47,11 +47,13 @@ public class Halo extends SettingsPreferenceFragment implements OnPreferenceChan
 
     private static final String KEY_HALO_STATE = "halo_state";
     private static final String KEY_HALO_HIDE = "halo_hide";
-    private static final String KEY_HALO_REVERSED = "halo_reversed";  
+    private static final String KEY_HALO_REVERSED = "halo_reversed";
+    private static final String KEY_HALO_PAUSE = "halo_pause"; 
 
     private ListPreference mHaloState;
     private CheckBoxPreference mHaloHide;
     private CheckBoxPreference mHaloReversed;
+    private CheckBoxPreference mHaloPause; 
 
     private INotificationManager mNotificationManager; 
 
@@ -76,7 +78,12 @@ public class Halo extends SettingsPreferenceFragment implements OnPreferenceChan
 
         mHaloReversed = (CheckBoxPreference) prefSet.findPreference(KEY_HALO_REVERSED);
         mHaloReversed.setChecked(Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
-                Settings.System.HALO_REVERSED, 1) == 1); 
+                Settings.System.HALO_REVERSED, 1) == 1);
+
+	int isLowRAM = (ActivityManager.isLargeRAM()) ? 0 : 1;
+        mHaloPause = (CheckBoxPreference) prefSet.findPreference(KEY_HALO_PAUSE);
+        mHaloPause.setChecked(Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.HALO_PAUSE, isLowRAM) == 1); 
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -112,9 +119,13 @@ public class Halo extends SettingsPreferenceFragment implements OnPreferenceChan
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.HALO_REVERSED, mHaloReversed.isChecked()
                      ? 1 : 0);
-	} 
-	return super.onPreferenceTreeClick(preferenceScreen, preference); 
-        
+	} else if (preference == mHaloPause) {
+            Settings.System.putInt(mContext.getContentResolver(),
+                    Settings.System.HALO_PAUSE, mHaloPause.isChecked()
+                    ? 1 : 0);
+	}
+
+	return super.onPreferenceTreeClick(preferenceScreen, preference);   
     }
 }
 
