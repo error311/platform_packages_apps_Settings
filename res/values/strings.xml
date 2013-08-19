@@ -4758,7 +4758,25 @@
     <string name="navigation_bar_height_0">0dp (hide)</string>
 
     <!-- TRDS Settings -->
-    <string name="trds_settings_title">Dark nova</string> 
+    <string name="trds_settings_title">Dark nova</string>
+
+    <!-- Quick Settings -->
+    <string name="display_category_quicksettings_options_title">Quick settings</string>
+    <string name="quick_settings_title">Quick settings</string>
+
+    <!-- Label for are-notifications-enabled checkbox in app details [CHAR LIMIT=20] -->
+    <string name="app_halo_label_black">Blacklist HALO notifications</string>
+    <string name="app_halo_label_white">Whitelist HALO notifications</string>
+
+    <!-- HALO -->
+    <string name="halo_hide_title">Hide HALO after activity</string>
+    <string name="halo_hide_summary">HALO will appear for incoming tasks and scroll out of sight after a while</string>
+    <string name="halo_reversed_title">Reverse HALO gestures</string>
+    <string name="halo_reversed_summary">Applies tasking or dragging to the double-tap-swipe gesture</string>
+    <string name="halo_state_title">HALO policy</string>
+    <string name="halo_state_summary">For black/white-listing notifications pinging through HALO</string>
+    <string name="halo_state_black">Black list</string>
+    <string name="halo_state_white">White list</string> 
 
     <!-- MY ADDITIONS --> 
 

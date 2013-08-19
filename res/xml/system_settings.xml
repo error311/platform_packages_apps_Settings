@@ -47,7 +47,19 @@
 	<PreferenceScreen
             android:key="power_menu"
             android:title="@string/power_menu_title"
-            android:fragment="com.android.settings.samuele.PowerMenu" /> 
+            android:fragment="com.android.settings.samuele.PowerMenu" />
+
+    <PreferenceCategory
+            android:key="category_quicksettings_options"
+            android:title="@string/display_category_quicksettings_options_title"/>
+
+	<Preference
+            android:title="@string/quick_settings_title" >
+	    <intent
+		android:action="android.intent.action.MAIN"
+		android:targetClass="com.TwinBlade.QSCP.Main"
+		android:targetPackage="com.TwinBlade.QSCP" />
+	</Preference>
 
     <PreferenceCategory
             android:key="category_power_menu_options"
@@ -73,9 +85,18 @@
             android:title="@string/display_category_lockscreen_options_title"/>
 
 	<PreferenceScreen
-        android:key="lock_screen"
-        android:title="@string/lock_screen_title"
-        android:fragment="com.android.settings.samuele.LockscreenInterface" />
+            android:key="lock_screen"
+            android:title="@string/lock_screen_title"
+            android:fragment="com.android.settings.samuele.LockscreenInterface" />
+
+    <PreferenceCategory
+            android:key="category_lockscreen_options"
+            android:title="HALO"/>
+
+	<PreferenceScreen
+            android:key="halo"
+            android:title="Halo"
+            android:fragment="com.android.settings.samuele.Halo" />
 
 </PreferenceScreen> 
 
