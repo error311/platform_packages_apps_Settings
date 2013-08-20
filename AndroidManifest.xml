@@ -1589,6 +1589,7 @@
         <activity android:name=".samuele.LockscreenInterface" />
 	<activity android:name=".samuele.StatusBarStyle" />
 	<activity android:name=".samuele.DeviceInfoHard" />
+	<activity android:name=".samuele.AboutUs" />
 
         <!-- MY ADDIOTIONS END --> 
 
