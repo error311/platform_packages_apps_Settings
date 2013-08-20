@@ -17,16 +17,17 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
         android:title="@string/about_settings">
 
+	<!-- About SuperNova -->
+	<PreferenceScreen
+	    android:fragment="com.android.settings.samuele.AboutUs"
+	    android:key="about"
+	    android:title="About SuperNova" />
+
 	<!-- Hardware info -->
 	<PreferenceScreen
             android:fragment="com.android.settings.samuele.DeviceInfoHard"
             android:key="device_hard_info"
             android:title="@string/device_hard_info_title" />
-
-	<PreferenceScreen
-	    android:fragment="com.android.settings.samuele.AboutUs"
-	    android:key="about"
-	    android:title="About SuperNova team" />
 
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
