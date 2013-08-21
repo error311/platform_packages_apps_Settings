@@ -18,4 +18,9 @@
         android:defaultValue="48"
         android:persistent="false" />
 
+    <net.margaritov.preference.colorpicker.ColorPickerPreference
+        android:key="navigation_button_color"
+        android:title="@string/navigation_button_color_title"
+        android:defaultValue="#000000" /> 
+
 </PreferenceScreen>

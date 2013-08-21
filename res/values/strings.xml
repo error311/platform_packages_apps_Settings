@@ -4789,7 +4789,12 @@
     <string name="halo_size_default">Default</string>
     <string name="halo_size_large">Large</string>
     <string name="halo_size_gigantic">Gigantic</string>
-    <string name="halo_size_monster">Monster</string> 
+    <string name="halo_size_monster">Monster</string>
+
+    <!-- Navigation Bar Color -->
+    <string name="navigation_button_color_title">Button color overlay</string>
+    <string name="dialog_indicator_color_title">Select color</string>
+    <string name="color_default">Default</string>
 
     <!-- MY ADDITIONS --> 
 
