@@ -5,20 +5,25 @@ import android.os.Bundle;
 import android.preference.ListPreference; 
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.provider.Settings; 
+import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.samuele.SeekBarPreferenceGlow;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference; 
 
 public class NavigationBarSettings extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
 
     private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
-    private static final String NAVIGATION_BUTTON_COLOR = "navigation_button_color"; 
+    private static final String NAVIGATION_BUTTON_COLOR = "navigation_button_color";
+    private static final String NAVIGATION_BUTTON_GLOW_COLOR = "navigation_button_glow_color";
+    private static final String NAVIGATION_BUTTON_GLOW_TIME = "navigation_button_glow_time"; 
 
     private ListPreference mNavigationBarHeight;
-    private ColorPickerPreference mNavigationBarButtonColor; 
+    private ColorPickerPreference mNavigationBarButtonColor;
+    private ColorPickerPreference mNavigationButtonGlowColor; 
+    private SeekBarPreferenceGlow mNavigationButtonGlowTime;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,6 +38,18 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
                 Settings.System.NAVIGATION_BAR_HEIGHT, 48);
         mNavigationBarHeight.setValue(String.valueOf(statusNavigationBarHeight));
         mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntry());
+
+	mNavigationButtonGlowTime = (SeekBarPreferenceGlow) getPreferenceScreen().findPreference(NAVIGATION_BUTTON_GLOW_TIME);
+        mNavigationButtonGlowTime.setDefault(Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.NAVIGATION_BUTTON_GLOW_TIME, 500));
+        mNavigationButtonGlowTime.setOnPreferenceChangeListener(this); 
+
+	mNavigationButtonGlowColor = (ColorPickerPreference) findPreference(NAVIGATION_BUTTON_GLOW_COLOR);
+        mNavigationButtonGlowColor.setOnPreferenceChangeListener(this);
+        int intColor1 = Settings.System.getInt(getActivity().getContentResolver(),
+                    Settings.System.NAVIGATION_BUTTON_GLOW_COLOR, 0x00000000);
+        String hexColor1 = String.format("#%08x", (0xffffffff & intColor1));
+        mNavigationButtonGlowColor.setNewPreviewColor(intColor1);  
 
 	mNavigationBarButtonColor = (ColorPickerPreference) findPreference(NAVIGATION_BUTTON_COLOR);
         mNavigationBarButtonColor.setOnPreferenceChangeListener(this);
@@ -65,7 +82,20 @@ public class NavigationBarSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.NAVIGATION_BUTTON_COLOR, intHex);
             return true;
-	} 
+	} else if (preference == mNavigationButtonGlowColor) {
+            String hex = ColorPickerPreference.convertToARGB(
+                    Integer.valueOf(String.valueOf(objValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.NAVIGATION_BUTTON_GLOW_COLOR, intHex);
+	    return true;
+	} else if (preference == mNavigationButtonGlowTime) {
+            int value = (Integer) objValue;
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.NAVIGATION_BUTTON_GLOW_TIME, value);
+            return true;
+	}
         return false; 
     }
 }

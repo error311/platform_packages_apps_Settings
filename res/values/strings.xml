@@ -4796,6 +4796,10 @@
     <string name="dialog_indicator_color_title">Select color</string>
     <string name="color_default">Default</string>
 
+    <!-- Navigation button glow time and color -->
+    <string name="navigation_button_glow_color_title">Button glow color</string>
+    <string name="navigation_button_glow_time_title">Button glow time</string> 
+
     <!-- MY ADDITIONS --> 
 
 </resources>
