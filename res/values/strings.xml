@@ -4719,17 +4719,6 @@
     <string name="auto_hide_statusbar">Auto Hide statusbar</string>
     <string name="auto_hide_statusbar_summary">Statusbar hides itself when there are no notifications</string>
 
-    <!-- Status bar background style -->
-    <string name="status_bar_transparency_title">Status bar transparency</string>
-    <string name="status_bar_color_title">Status bar color</string>
-    <string name="status_bar_background_style">Background style</string>
-    <string name="status_bar_alpha_mode_dialog_text_title">Show status bar transparency</string>
-    <string name="status_bar_alpha_mode_text_title">Transparency mode</string>
-    <string name="status_bar_alpha_mode_home">on launcher</string>
-    <string name="status_bar_alpha_mode_default">on launcher and keyguard</string>
-    <string name="status_bar_alpha_mode_always">always</string>
-    <string name="status_bar_style_reset">Reset</string>
-
     <string name="device_hard_info_title">Hardware info</string>
     <string name="camera_info">Rear camera</string>
     <string name="fcamera_info">Front camera</string>
@@ -4799,7 +4788,18 @@
 
     <!-- Navigation button glow time and color -->
     <string name="navigation_button_glow_color_title">Button glow color</string>
-    <string name="navigation_button_glow_time_title">Button glow time</string> 
+    <string name="navigation_button_glow_time_title">Button glow time</string>
+
+    <!-- Transparency Settings -->
+    <string name="transparency_dialog_title">Transparency settings</string>
+    <string name="transparency_dialog_linked_transparency">Link statusbar &amp; navbar alpha</string>
+    <string name="transparency_dialog_transparency_sb_and_nv">Statusbar and navigation bar</string>
+    <string name="transparency_dialog_statusbar">Statusbar</string>
+    <string name="transparency_dialog_navbar">Navigation bar</string>
+    <string name="transparency_dialog_match_keyguard_alpha">Match lockscreen alpha</string>
+    <string name="transparency_dialog_transparency">Homescreen alpha</string>
+    <string name="transparency_dialog_transparency_keyguard">Lockscreen alpha</string>
+    <string name="save">Save</string> 
 
     <!-- MY ADDITIONS --> 
 

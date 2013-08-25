@@ -2,8 +2,8 @@
 
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:title="@string/status_bar_title">
-    
+    android:title="@string/status_bar_title"> 
+
     <PreferenceScreen
         android:key="navigation_bar"
         android:fragment="com.android.settings.samuele.NavBar"

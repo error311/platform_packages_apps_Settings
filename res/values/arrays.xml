@@ -1083,19 +1083,6 @@
         <item>@*android:drawable/ic_lockscreen_twitter_normal</item>
     </string-array> 
 
-    <!-- Status Bar alpha mode-->
-    <string-array name="entries_status_bar_alpha_mode">
-        <item>@string/status_bar_alpha_mode_home</item>
-        <item>@string/status_bar_alpha_mode_default</item>
-        <item>@string/status_bar_alpha_mode_always</item>
-    </string-array>
-
-    <string-array name="values_status_bar_alpha_mode" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
     <!--- Navigation bar -->
     <!--- Navigation bar height -->
     <string-array name="navigation_bar_height_entries" translatable="false">
@@ -1148,6 +1135,6 @@
         <item>1.2</item>
         <item>1.4</item>
         <item>1.6</item>
-    </string-array> 
+    </string-array>
 
 </resources>
