@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.cyanogenmod;
+package com.android.settings.samuele;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -50,7 +50,7 @@ import com.android.internal.util.cm.LockscreenTargetUtils;
 import com.android.internal.widget.multiwaveview.GlowPadView;
 import com.android.internal.widget.multiwaveview.TargetDrawable;
 import com.android.settings.R;
-import com.android.settings.cyanogenmod.IconPicker.OnIconPickListener;
+import com.android.settings.samuele.IconPicker.OnIconPickListener;
 
 import java.io.File;
 import java.io.IOException;
