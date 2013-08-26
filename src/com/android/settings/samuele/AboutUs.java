@@ -40,6 +40,8 @@ public class AboutUs extends SettingsPreferenceFragment {
     Preference mImage;
     Preference mXdaToro;
     Preference mXdaMaguro;
+    Preference mContacts;
+    Preference mWebSite;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,8 @@ public class AboutUs extends SettingsPreferenceFragment {
 	mImage = findPreference("image");
 	mXdaToro = findPreference("xda_toro");
         mXdaMaguro = findPreference("xda_maguro");
+	mContacts = findPreference("contacts");
+	mWebSite = findPreference("web_site");
     }
 
     @Override
@@ -63,7 +67,15 @@ public class AboutUs extends SettingsPreferenceFragment {
 	    launchUrl("https://www.facebook.com/SuperNovaDevTeam");
 	} else if (preference == mXdaToro) {
 	    launchUrl("http://forum.xda-developers.com/showthread.php?t=2413236");
-	}
+	} else if (preference == mContacts) {
+	    Intent email = new Intent(Intent.ACTION_SEND);
+	    email.setType("plain/text");
+	    email.putExtra(Intent.EXTRA_EMAIL, new String[] {
+		"SuperNovaDevTeam@gmail.com" });
+	    startActivity(Intent.createChooser(email, ""));
+	} else if (preference == mWebSite) {
+	    launchUrl("http://supernovadevteam.altervista.org");
+	} 
 	return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
