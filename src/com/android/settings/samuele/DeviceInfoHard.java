@@ -20,6 +20,7 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Build;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
