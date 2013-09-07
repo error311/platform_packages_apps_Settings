@@ -29,6 +29,11 @@
             android:key="device_hard_info"
             android:title="@string/device_hard_info_title" />
 
+	<!-- SuperNova Version -->
+	<Preference android:key="supernova_version" 
+                android:title="@string/supernova_version_title"
+                android:summary="5.1"/>
+
         <!-- Device status - launches activity -->
         <PreferenceScreen android:key="status_info"
                 android:title="@string/device_status" 

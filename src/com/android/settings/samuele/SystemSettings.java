@@ -67,7 +67,6 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
     private static final String KEY_BATTERY_LIGHT = "battery_light";
     private static final String KEY_NOTIFICATION_PULSE = "notification_pulse";
-    private static final String KEY_QUICK_SETTINGS = "quick_settings";
 
     private CheckBoxPreference mVolumeWake; 
     private ListPreference mVolumeOverlay; 
@@ -75,7 +74,6 @@ public class SystemSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mKillAppLongpressBack;
     private PreferenceScreen mNotificationPulse;
     private PreferenceScreen mBatteryPulse;
-    private Preference mQuickSettings;
 
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
     private final ArrayList<CheckBoxPreference> mResetCbPrefs
@@ -98,8 +96,6 @@ public class SystemSettings extends SettingsPreferenceFragment implements
                         Settings.System.VOLUME_WAKE_SCREEN, 0) == 1);
             }
         }
-
-	mQuickSettings = findPreference(KEY_QUICK_SETTINGS);
 
         mVolumeOverlay = (ListPreference) findPreference(KEY_VOLUME_OVERLAY);
         mVolumeOverlay.setOnPreferenceChangeListener(this);
@@ -140,12 +136,6 @@ public class SystemSettings extends SettingsPreferenceFragment implements
             // getFragmentManager().beginTransaction().add(new
             // TransparencyDialog(), null).commit();
             openTransparencyDialog();
-	} else if (preference == mQuickSettings) {
-	    Intent quickSettings = new Intent();
-	    quickSettings.setClassName("com.TwinBlade.QSCP",
-		"com.TwinBlade.QSCP.Main");
-	    quickSettings.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-	    getActivity().getApplicationContext().startActivity(quickSettings); 
 	} else {
 	    // If we didn't handle it, let preferences handle it.
 	    return super.onPreferenceTreeClick(preferenceScreen, preference);

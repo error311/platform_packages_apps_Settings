@@ -53,9 +53,10 @@
             android:key="category_quicksettings_options"
             android:title="@string/display_category_quicksettings_options_title"/>
 
-	<Preference
-	    android:key="quick_settings"
-            android:title="@string/quick_settings_title" />
+	<PreferenceScreen
+	    android:key="quick_settings_panel"
+	    android:fragment="com.android.settings.samuele.QuickSettings"
+	    android:title="@string/quick_settings_panel_title" /> 
 
     <PreferenceCategory
             android:key="category_power_menu_options"

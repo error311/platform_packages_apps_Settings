@@ -2016,7 +2016,6 @@
     <string name="custom_time">Personalizzato</string>
 
     <string name="dialog_test">Test</string>
-    <string name="dialog_delete_title">Cancella</string>
     <string name="dialog_delete_message">Rimuovere gli elementi selezionati?</string>
     <string name="dialog_test_message">Spegnere lo schermo per vedere la notifica selezionata in azione o chiudere questa finestra per interrompere il test</string>
     <string name="dialog_test_button">Rimuovi</string>
@@ -2039,7 +2038,6 @@
     <string name="ok">OK</string>
     <string name="profile_applist_title">Applicazioni</string>
 
-    <string name="profile_reset_title">Reset</string>
     <string name="select_custom_app_title">Seleziona applicazioni</string>
 
     <string name="summary_expanded_desktop">%1$s</string>
@@ -2151,7 +2149,7 @@
     <!-- HALO -->
     <string name="halo_enabled_title">Abilita HALO</string>
     <string name="halo_enabled_summary">Abilita le opzioni di halo</string> 
-    <string name="halo_hide_title">Nascondi HALO dopo l'\attività</string>
+    <string name="halo_hide_title">Nascondi HALO dopo l\'attività</string>
     <string name="halo_hide_summary">Halo apparirà per nuove notifiche e si nasconderà automaticamente</string>
     <string name="halo_reversed_title">Invertire HALO gestures</string>
     <string name="halo_reversed_summary">Inverti il comportamento di halo,un tap per spostarlo e due per aprire le opzioni</string>
@@ -2160,7 +2158,7 @@
     <string name="halo_state_black">Blacklist</string>
     <string name="halo_state_white">Whitelist</string>
     <string name="halo_pause_title">HALO arrestare applicazione attiva</string>
-    <string name="halo_pause_summary">Quando apri un app con Halo l'applicazione attiva sarà stoppata</string>
+    <string name="halo_pause_summary">Quando apri un app con Halo l\'applicazione attiva sarà stoppata</string>
 
     <string name="halo_size_title">Misura HALO</string>
     <string name="halo_size_summary">Definisce la grandezza di Halo</string>
@@ -2182,7 +2180,7 @@
 
     <!-- Transparency Settings -->
     <string name="transparency_dialog_title">Impostazioni di trasparenza</string>
-    <string name="transparency_dialog_linked_transparency">Collega l'\alpha della status &amp; nav bar</string>
+    <string name="transparency_dialog_linked_transparency">Collega l\'alpha della status &amp; nav bar</string>
     <string name="transparency_dialog_transparency_sb_and_nv">Barra di stato e di navigazione</string>
     <string name="transparency_dialog_statusbar">Barra di stato</string>
     <string name="transparency_dialog_navbar">Barra di navigazione</string>
@@ -2191,5 +2189,81 @@
     <string name="transparency_dialog_transparency_keyguard">Lockscreen alpha</string>
     <string name="save">Salva</string> 
 
+    <!-- Themes settings  -->
+    <string name="themes_settings_title">Temi</string>
+
+    <string name="supernova_version_title">Versione SuperNova</string>
+
+    <!-- Quick settings panel -->
+    <string name="quick_settings_panel_title">Quick Settings</string>
+    <string name="title_static_tiles">Tiles statici</string>
+    <string name="tile_picker_title">Tiles e layout</string>
+    <string name="tile_picker_summary">Visualizza, seleziona o cambia la disposizione dei tiles</string>
+    <string name="tile_choose_title">Seleziona un tile</string>
+    <string name="title_tile_camera">FotoCamera</string>
+    <string name="title_tile_airplane">Modalità aereo</string>
+    <string name="title_tile_battery">Statistiche batteroe</string>
+
+    <string name="title_tile_bluetooth">Bluetooth</string>
+    <string name="title_tile_brightness">Luminosità</string>
+    <string name="title_tile_sleep">Dormi</string>
+
+    <string name="title_tile_gps">GPS</string>
+    <string name="title_tile_torch">Torcia</string>
+
+    <string name="title_tile_lockscreen">Lock screen</string>
+    <string name="title_tile_mobiledata">Dati mobili</string>
+    <string name="title_tile_autorotate">Orientamento</string>
+    <string name="title_tile_settings">Impostazioni</string>
+    <string name="title_tile_sound">Suono</string>
+
+    <string name="title_tile_sync">Sync</string>
+    <string name="title_tile_wifiap">Wi-Fi AP</string>
+    <string name="title_tile_wifi">Wi-Fi</string>
+    <string name="title_tile_user">User switcher</string>
+    <string name="title_tile_nfc">NFC</string>
+    <string name="title_tile_screen_timeout">Timeout schermo</string>
+    <string name="title_tile_usb_tether">Tether USB</string>
+
+    <string name="title_tile_volume">Volume</string>
+    <string name="title_tile_expanded_desktop">Desktop esteso</string>
+
+    <string name="title_general">Generale</string>
+    <string name="title_quick_pulldown">Discesa rapida</string>
+    <string name="summary_quick_pulldown">%1$s angolo della barra di stato per espandere i quick settings</string>
+    <string name="quick_pulldown_summary_left">Sinistra</string>
+    <string name="quick_pulldown_summary_right">Destra</string>
+    <string name="quick_pulldown_off">Spento</string>
+    <string name="quick_pulldown_left">Sinistra</string>
+    <string name="quick_pulldown_right">Destra</string>
+    <string name="title_collapse_panel">Chiusura automatica pannello</string>
+    <string name="summary_collapse_panel">Chiudi il pannello dopo aver cliccato su un tile</string>
+    <string name="title_dynamic_tiles">Tiles dinamici</string>
+
+    <string name="dynamic_tiles_note_title">Note</string>
+    <string name="dynamic_tiles_note_summary">I tiles dinamici non sono sempre visibili e verranno visualizzati solo se necessario</string>
+    <string name="title_dynamic_alarm">Sveglia</string>
+
+    <string name="title_dynamic_bugreport">Bug report</string>
+    <string name="title_dynamic_dock_battery">Batteria dock</string>
+    <string name="title_dynamic_ime">IME</string>
+    <string name="title_dynamic_usbtether">Tether USB</string>
+    <string name="title_dynamic_wifi">WiFi</string>
+    <string name="pref_screentimeout_mode_title">Modalità di timeout dello schermo</string>
+    <string name="pref_ring_mode_title">Modalità suono</string>
+    <string name="pref_ring_mode_summary">Visualizza o modifica le modalità del tile audio </string>
+
+
+    <!-- Reset Profiles -->
+    <string name="profile_reset_title">Reset</string>
+    <string name="profile_reset_message">Eliminare tutti i profili utente ed i gruppi di applicazioni e ripristinare i valori di default?</string>
+    <string name="profiles_add">Aggiungi</string>
+
+
+    <!-- Reset tiles -->
+    <string name="tiles_reset_title">Reset</string>
+    <string name="tiles_reset_message">Ripristinare il layuot dei tiles di default?</string>
+
+    <string name="dialog_delete_title">Cancella</string>
 
 </resources>

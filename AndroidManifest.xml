@@ -1590,7 +1590,8 @@
 	<activity android:name=".samuele.StatusBarStyle" />
 	<activity android:name=".samuele.DeviceInfoHard" />
 	<activity android:name=".samuele.AboutUs" />
-	<activity android:name=".samuele.NavBarStyle" /> 
+	<activity android:name=".samuele.NavBarStyle" />
+	<activity android:name=".samuele.QuickSettings" /> 
 
         <!-- MY ADDIOTIONS END --> 
 
